@@ -51,7 +51,7 @@ document.getElementById('donation-feni-btn').addEventListener('click', function(
   event.preventDefault()
   
   const addInputFeni = document.getElementById('input-feni').value;
-  console.log(addInputFeni)
+  
   if(addInputFeni >= 100 ){
        
         
@@ -70,13 +70,21 @@ document.getElementById('donation-feni-btn').addEventListener('click', function(
   document.getElementById('my-balance').innerText = newFeniBalance;
 
   const feniMoney = document.getElementById('feni-balance').innerText;
-  console.log(feniMoney)
+  
+  const addInputFeniMoney = document.getElementById('input-feni').value;
+  
+  const feniDonateBalance = parseFloat(feniMoney);
+  const balanceDonateFeni = parseFloat(addInputFeniMoney);
+  const newFeniMoney = feniDonateBalance + balanceDonateFeni;
+  
+  document.getElementById('feni-balance').innerText = newFeniMoney
+  console.log(newFeniMoney)
 
 })
 
 
+// feni flood ends
 
-// feni flood start
 
 
 // Quota Movement start
