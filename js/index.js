@@ -127,4 +127,12 @@ document.getElementById('donation-quota-btn').addEventListener('click', function
 
 })
 
-// Quota Movement ends
+// Quota Movement ends  
+
+// go to blog page
+// function go() {
+//   window.location.href = './blog.html'
+// }
+
+
+
