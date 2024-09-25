@@ -7,14 +7,14 @@ document.getElementById('donation-btn').addEventListener('click', function(event
     const addInput = document.getElementById('input-flood').value;
     
     if(addInput >= 100 ){
-      
-      document.getElementById('input-flood').value = '';
+     
         
     }
     else{
       alert('Invalid Amount')
       return "value returnd"
     }
+    
 
     const mainBalance = document.getElementById('my-balance').innerText;
     
@@ -39,11 +39,6 @@ document.getElementById('donation-btn').addEventListener('click', function(event
     document.getElementById('flood').innerText = newFloodBalance
     
     
-    function clearInput() {
-        
-      
-  }
-
 })
 
 
