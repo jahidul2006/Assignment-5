@@ -120,11 +120,7 @@ document.getElementById('donation-quota-btn').addEventListener('click', function
   const addInputQuotaMoney = document.getElementById('input-quota').value;
   console.log(addInputQuotaMoney)
 
-  const quotaDonateBalance = parseFloat(quotaMoney);
-  const balanceDonate = parseFloat(addInputQuotaMoney);
-  const newQuotaMoney = quotaDonateBalance + balanceDonate;
-
-  document.getElementById('quota-balance').innerText = newQuotaMoney
+ 
 
 })
 
