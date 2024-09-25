@@ -7,7 +7,8 @@ document.getElementById('donation-btn').addEventListener('click', function(event
     const addInput = document.getElementById('input-flood').value;
     
     if(addInput >= 100 ){
-       
+      
+      document.getElementById('input-flood').value = '';
         
     }
     else{
@@ -37,6 +38,11 @@ document.getElementById('donation-btn').addEventListener('click', function(event
 
     document.getElementById('flood').innerText = newFloodBalance
     
+    
+    function clearInput() {
+        
+      
+  }
 
 })
 
@@ -129,10 +135,15 @@ document.getElementById('donation-quota-btn').addEventListener('click', function
 
 // Quota Movement ends  
 
-// go to blog page
-// function go() {
-//   window.location.href = './blog.html'
-// }
+// donation-tab start
 
+const historyTab = document.getElementById('history-tab');
+const donationTab = document.getElementById('donation-tab');
+historyTab.addEventListener('click', function(){
+  historyTab.classList.add('btn-success')
 
+  donationTab.classList.remove('btn-success')
 
+})
+
+// donation-tab ends
